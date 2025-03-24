@@ -4,8 +4,8 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "SnapZen - Intelligent Screenshot Analysis",
-  description: "SnapZen leverages AI models like Gemini and GPT-4o to extract and analyze content from screenshots.",
+  title: "Visica - Intelligent Screenshot Analysis",
+  description: "Visica leverages AI models like Gemini and GPT-4o to extract and analyze content from screenshots.",
   generator: "v0.dev",
 }
 

@@ -32,7 +32,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
     const fetchLatestRelease = async () => {
       try {
         setIsLoading(true)
-        const response = await fetch("https://api.github.com/repos/nxtgencat/snapzen/releases/latest")
+        const response = await fetch("https://api.github.com/repos/nxtgencat/Visica/releases/latest")
         if (response.ok) {
           const data = await response.json()
           setLatestRelease(data)
@@ -72,7 +72,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
               Intelligent Screenshot Analysis with AI
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              SnapZen leverages AI models like Gemini and GPT-4o to extract and analyze content from your screenshots
+              Visica leverages AI models like Gemini and GPT-4o to extract and analyze content from your screenshots
               instantly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
@@ -105,7 +105,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Powerful Features</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              SnapZen runs silently in the background, ready to analyze your screenshots with powerful AI models at the
+              Visica runs silently in the background, ready to analyze your screenshots with powerful AI models at the
               press of a key.
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
               </div>
               <h3 className="text-xl font-medium mb-2">Lightweight Background Process</h3>
               <p className="text-muted-foreground">
-                SnapZen runs silently in the system tray, using minimal resources while always being ready when you need
+                Visica runs silently in the system tray, using minimal resources while always being ready when you need
                 it.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">How It Works</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            SnapZen is designed to be simple and efficient, helping you analyze screenshots with just a few keystrokes.
+            Visica is designed to be simple and efficient, helping you analyze screenshots with just a few keystrokes.
           </p>
         </div>
 
@@ -171,7 +171,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
             </div>
             <h3 className="text-lg font-medium mb-2">2. Capture Screenshot</h3>
             <p className="text-muted-foreground">
-              SnapZen automatically captures your current screen or selected area.
+              Visica automatically captures your current screen or selected area.
             </p>
           </div>
 
@@ -209,7 +209,7 @@ export default function LandingPage({ onGetStarted, isAuthenticated = false, use
       <footer className="border-t border-border bg-background px-4 mt-auto">
         <div className="container mx-auto py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} SnapZen. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Visica. All rights reserved.</p>
             <div className="flex items-center gap-4">
               <a
                 href="https://github.com/nxtgencat"

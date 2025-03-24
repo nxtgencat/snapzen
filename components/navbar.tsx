@@ -22,7 +22,7 @@ export default function Navbar({ isAuthenticated, userName, onSignOut, onGetStar
         <div className="flex items-center gap-2">
           <Link href="#" className="flex items-center gap-2">
             <span className="text-2xl">😎</span>
-            <span className="text-xl font-bold">SnapZen</span>
+            <span className="text-xl font-bold">Visica</span>
           </Link>
         </div>
 

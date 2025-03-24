@@ -14,7 +14,7 @@ export default function Home() {
 
   // Check for stored session on page load
   useEffect(() => {
-    const storedPassphrase = localStorage.getItem("snapzen_passphrase")
+    const storedPassphrase = localStorage.getItem("Visica_passphrase")
     if (storedPassphrase) {
       setIsLoading(true)
       getAndProcessRecord(storedPassphrase, "view")
@@ -32,7 +32,7 @@ export default function Home() {
         })
         .catch((err) => {
           console.error("Failed to restore session:", err)
-          localStorage.removeItem("snapzen_passphrase")
+          localStorage.removeItem("Visica_passphrase")
         })
         .finally(() => {
           setIsLoading(false)
@@ -45,14 +45,14 @@ export default function Home() {
   const handleAuthSuccess = (passphrase: string, data: any) => {
     setCurrentPassphrase(passphrase)
     setUserData(data)
-    localStorage.setItem("snapzen_passphrase", passphrase)
+    localStorage.setItem("Visica_passphrase", passphrase)
     setView("dashboard")
   }
 
   const handleSignOut = () => {
     setCurrentPassphrase(null)
     setUserData(null)
-    localStorage.removeItem("snapzen_passphrase")
+    localStorage.removeItem("Visica_passphrase")
     setView("landing")
   }
 
@@ -70,7 +70,7 @@ export default function Home() {
         <div className="flex items-center justify-center min-h-screen">
           <div className="flex flex-col items-center gap-2">
             <div className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full"></div>
-            <p className="text-muted-foreground">Loading SnapZen...</p>
+            <p className="text-muted-foreground">Loading Visica...</p>
           </div>
         </div>
       ) : (

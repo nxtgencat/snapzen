@@ -141,7 +141,7 @@ export default function Dashboard({ passphrase, userData, onSignOut, onDataUpdat
           <Alert className="mb-6 bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-800">
             <AlertTriangle className="h-4 w-4 text-yellow-800 dark:text-yellow-300" />
             <AlertDescription className="text-yellow-800 dark:text-yellow-300">
-              Please add your GitHub token to start using SnapZen's screenshot analysis features.
+              Please add your GitHub token to start using Visica's screenshot analysis features.
             </AlertDescription>
           </Alert>
         )}
@@ -282,7 +282,7 @@ export default function Dashboard({ passphrase, userData, onSignOut, onDataUpdat
                     <CardHeader>
                       <CardTitle>API Keys Configuration</CardTitle>
                       <CardDescription>
-                        Configure your API keys to enable SnapZen's screenshot analysis features
+                        Configure your API keys to enable Visica's screenshot analysis features
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
@@ -376,7 +376,7 @@ export default function Dashboard({ passphrase, userData, onSignOut, onDataUpdat
                   <Card>
                     <CardHeader>
                       <CardTitle>Application Settings</CardTitle>
-                      <CardDescription>Configure how SnapZen works on your system</CardDescription>
+                      <CardDescription>Configure how Visica works on your system</CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       <div className="p-4 bg-muted rounded-lg">

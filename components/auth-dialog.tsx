@@ -113,7 +113,7 @@ export default function AuthDialog({ onSuccess, onCancel }: AuthDialogProps) {
         {!newPassphrase ? (
           <>
             <CardHeader>
-              <CardTitle>Get Started with SnapZen</CardTitle>
+              <CardTitle>Get Started with Visica</CardTitle>
               <CardDescription>Sign in or create a new account</CardDescription>
             </CardHeader>
             <CardContent>
